@@ -14,7 +14,7 @@ services:
   myapp:
     image: quay.io/apibara/cli:latest
     volumes:
-      - ~/performance/typescript-test:/data
+      - ~/apibara-starknet/typescript-test:/data
     command: ["run", "/data/script.ts", "-A", "dna_key"]
     depends_on:
       - mongo
